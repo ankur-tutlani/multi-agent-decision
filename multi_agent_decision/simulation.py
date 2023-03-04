@@ -69,7 +69,7 @@ dotprod = lambda K, L: reduce(lambda z1, z2: z1+z2, map(lambda x: reduce(lambda 
 
 
 
-def perturbed_response1(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents):
+def perturbed_response1(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use):
     
     agent_strategy_to_choose=[]
 
@@ -138,7 +138,7 @@ def perturbed_response1(num_agents,agent_and_strategy_pd2,potential_edges,pertur
 
 
 
-def perturbed_response2(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents):
+def perturbed_response2(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use):
     
     agent_strategy_to_choose=[]
 
@@ -211,7 +211,7 @@ def perturbed_response2(num_agents,agent_and_strategy_pd2,potential_edges,pertur
 
 
 
-def perturbed_response3(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents):
+def perturbed_response3(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use):
     
     agent_strategy_to_choose=[]
 
@@ -269,7 +269,7 @@ def perturbed_response3(num_agents,agent_and_strategy_pd2,potential_edges,pertur
 
 
 
-def perturbed_response4(num_agents,agent_and_strategy_pd2,potential_edges,fixed_agents):
+def perturbed_response4(num_agents,agent_and_strategy_pd2,potential_edges,fixed_agents,fixed_strategy_to_use):
     agent_strategy_to_choose=[]
 
     if len(fixed_agents) > 0:
@@ -478,13 +478,13 @@ def simulation_function_neighbors(random_seed,
         agent_and_strategy_pd2 = pd.merge(agent_and_strategy_pd,agent_and_strategy_payoff,on='agent_no')
 
         if function_to_use == 'perturbed_response1':
-            agent_strategy_to_choose = perturbed_response1(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents)
+            agent_strategy_to_choose = perturbed_response1(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use)
         elif function_to_use == 'perturbed_response2':
-            agent_strategy_to_choose = perturbed_response2(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents)
+            agent_strategy_to_choose = perturbed_response2(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use)
         elif function_to_use == 'perturbed_response3':
-            agent_strategy_to_choose = perturbed_response3(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents)
+            agent_strategy_to_choose = perturbed_response3(num_agents,agent_and_strategy_pd2,potential_edges,perturb_ratio,unique_strategies,fixed_agents,fixed_strategy_to_use)
         elif function_to_use == 'perturbed_response4':
-            agent_strategy_to_choose = perturbed_response4(num_agents,agent_and_strategy_pd2,potential_edges,fixed_agents)
+            agent_strategy_to_choose = perturbed_response4(num_agents,agent_and_strategy_pd2,potential_edges,fixed_agents,fixed_strategy_to_use)
 
 
         agent_and_strategy_pd= pd.DataFrame({'agent_no':agents_list,'strategy':agent_strategy_to_choose})
