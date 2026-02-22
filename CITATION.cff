@@ -1,12 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated research article."
-title: "multi-agent-decision"
-version: "0.3"
+title: multi-agent-decision
+message: >-
+  If you use this software, please cite the associated
+  research article.
+type: software
 authors:
   - family-names: Tutlani
     given-names: Ankur
   - family-names: Kumar
     given-names: Dushyant
+version: '0.3'
 preferred-citation:
   type: article
   authors:
@@ -14,10 +17,10 @@ preferred-citation:
       given-names: Ankur
     - family-names: Kumar
       given-names: Dushyant
-  title: "Social Networks and Norms Evolution"
-  journal: "Computational Economics"
-  volume: "64"
+  title: Social Networks and Norms Evolution
+  journal: Computational Economics
+  volume: '64'
   start: 1
   end: 36
   year: 2024
-  doi: "10.1007/s10614-023-10424-0"
+  doi: 10.1007/s10614-023-10424-0
