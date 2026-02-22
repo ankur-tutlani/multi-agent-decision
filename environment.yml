@@ -1,0 +1,13 @@
+name: multi-agent-env
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - openpyxl=3.1.5
+  - pip:
+      - numpy=2.4.2
+      - pandas=3.0.1
+      - matplotlib=3.10.8
+      - networkx=3.6.1
+      - pillow=12.1.1
