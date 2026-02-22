@@ -164,6 +164,27 @@ Parameters file "parameters_.." lists all the parameters which have been specifi
 
 All the file names end with date and time stamp when the function was executed. It also contains information on network structure used like "ringnetwork" or "smallworld" network etc.
 
+## Citation
+
+If you use this library or the associated code in your research, please cite the following paper:
+
+**Plain Text:**
+
+Tutlani, A., Kumar, D. Social Networks and Norms Evolution. *Comput Econ* **64**, 1–36 (2024). https://doi.org/10.1007/s10614-023-10424-0
+
+**BibTeX:**
+```bibtex
+@article{tutlani2024social,
+  title={Social Networks and Norms Evolution},
+  author={Tutlani, Ankur and Kumar, Dushyant},
+  journal={Computational Economics},
+  volume={64},
+  pages={1--36},
+  year={2024},
+  publisher={Springer},
+  doi={10.1007/s10614-023-10424-0}
+}
+```
 
 ## References
 1. Young, H.P. "The evolution of social norms" Annual Review of Economics. 2015 (7),pp.359-387
