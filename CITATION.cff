@@ -17,6 +17,7 @@ preferred-citation:
   title: "Social Networks and Norms Evolution"
   journal: "Computational Economics"
   volume: "64"
-  pages: "1-36"
+  start: 1 # Changed from pages: "1-36"
+  end: 36
   year: 2024
   doi: "10.1007/s10614-023-10424-0"
