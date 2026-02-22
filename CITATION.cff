@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated research article."
 title: "multi-agent-decision"
+version: "0.3"
 authors:
   - family-names: Tutlani
     given-names: Ankur
@@ -16,6 +17,6 @@ preferred-citation:
   title: "Social Networks and Norms Evolution"
   journal: "Computational Economics"
   volume: "64"
-  pages: "1–36"
+  pages: "1-36"
   year: 2024
   doi: "10.1007/s10614-023-10424-0"
